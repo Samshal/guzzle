@@ -264,8 +264,8 @@ class Client implements ClientInterface
             unset($options['save_to']);
         }
         else if (!isset($options['sink'])) {
-            $fh = fopen("php://temp", "r+");
-            $options["sink"] = $fh;
+            $fh = fopen('php://temp', 'r+');
+            $options['sink'] = $fh;
         }
 
         // exceptions -> http_errors
